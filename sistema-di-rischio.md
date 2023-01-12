@@ -2,7 +2,7 @@
 
 Titolo originale: Necropraxis Productions Hazard System v0.3 (2017) http://www.necropraxis.com/hazard-system/
 
-Rilasciato sotto licenza Creative Commons Attribution 3.0 Unported license.
+Rilasciato sotto licenza Creative Commons Attribution 3.0 Unported.
 
 Traduzione di Roberto Bisceglie
 
