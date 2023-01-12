@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Sistema di rischio</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link type="text/css" rel="stylesheet" href="assets/style.css" />
+    <link type="text/css" rel="stylesheet" href="assets/pilcrow.css" />
+    <link type="text/css" rel="stylesheet" href="assets/hljs-github.min.css"/>
+  </head>
+<body><h1 id="sistema-di-rischio"><a class="header-link" href="#sistema-di-rischio"></a>Sistema di rischio</h1>
+<p>Titolo originale: Necropraxis Productions Hazard System v0.3 (2017) <a href="http://www.necropraxis.com/hazard-system/">http://www.necropraxis.com/hazard-system/</a></p>
+<p>Rilasciato sotto licenza Creative Commons Attribution 3.0 Unported license.</p>
+<p>Traduzione di Roberto Bisceglie</p>
+<p>Il dado di rischio a sei facce distribuisce le minacce, gestisce le risorse come la luce e tiene traccia il tempo. È il motore che fa avanzare il gioco, assicurando che le scelte abbiano  conseguenze, riducendo al minimo le operazioni di bookkeeping. Perché un turno sia svolto, un giocatore deve tirare il dado di rischio e l&#39;arbitro deve interpretare i risultati in base al tipo di turno in corso. Durante un turno, ogni giocatore può compiere un&#39;azione completa. La forma generale del dado di rischio è:</p>
+<table>
+<thead>
+<tr>
+<th align="center">1</th>
+<th align="center">2</th>
+<th align="center">3</th>
+<th align="center">4</th>
+<th align="center">5</th>
+<th align="center">6</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="center">Contrattempo</td>
+<td align="center">Fatica</td>
+<td align="center">Esaurimento</td>
+<td align="center">Zona</td>
+<td align="center">Percezione</td>
+<td align="center">Vantaggio</td>
+</tr>
+</tbody></table>
+<h2 id="interpretazioni-del-dado-di-rischio"><a class="header-link" href="#interpretazioni-del-dado-di-rischio"></a>Interpretazioni del dado di rischio</h2>
+<h3 id="turno-nel-rifugio"><a class="header-link" href="#turno-nel-rifugio"></a>Turno nel rifugio</h3>
+<table>
+<thead>
+<tr>
+<th>d6</th>
+<th>Risultato</th>
+<th>Interpretazione</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>1</td>
+<td>Contrattempo</td>
+<td>Incontro (usare la tabella regionale) o disastro (vedi sotto)</td>
+</tr>
+<tr>
+<td>2</td>
+<td>Fatica</td>
+<td>Carenza (1 medicina, 2-3 siccità, 4-5 carestia, 6 fiducia)</td>
+</tr>
+<tr>
+<td>3</td>
+<td>Esaurimento</td>
+<td>Eliminare una o più condizioni di rifugio</td>
+</tr>
+<tr>
+<td>4</td>
+<td>Zona</td>
+<td>Anticipo della stagione (o altro cambiamento in zona)</td>
+</tr>
+<tr>
+<td>5</td>
+<td>Percezione</td>
+<td>Prevedere un disastro incombente</td>
+</tr>
+<tr>
+<td>6</td>
+<td>Vantaggio</td>
+<td>Recupero completo</td>
+</tr>
+</tbody></table>
+<h3 id="turno-nelle-terre-selvagge"><a class="header-link" href="#turno-nelle-terre-selvagge"></a>Turno nelle terre selvagge</h3>
+<table>
+<thead>
+<tr>
+<th>d6</th>
+<th>Risultato</th>
+<th>Interpretazione</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>1</td>
+<td>Contrattempo</td>
+<td>Incontro (usare la tabella regionale) o strada/ponte bloccati</td>
+</tr>
+<tr>
+<td>2</td>
+<td>Fatica</td>
+<td>Riposare e consumare razioni (1/persona) o subire danni minori (1 HP)</td>
+</tr>
+<tr>
+<td>3</td>
+<td>Esaurimento</td>
+<td>Scadenza di una condizione transitoria</td>
+</tr>
+<tr>
+<td>4</td>
+<td>Zona</td>
+<td>Cambiamento del clima (o altri cambiamenti in zona)</td>
+</tr>
+<tr>
+<td>5</td>
+<td>Percezione</td>
+<td>Suggerimento o indizio sul prossimo incontro</td>
+</tr>
+<tr>
+<td>6</td>
+<td>Vantaggio</td>
+<td>Turno libero</td>
+</tr>
+</tbody></table>
+<h3 id="turno-nel-dungeon"><a class="header-link" href="#turno-nel-dungeon"></a>Turno nel dungeon</h3>
+<table>
+<thead>
+<tr>
+<th>d6</th>
+<th>Risultato</th>
+<th>Interpretazione</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>1</td>
+<td>Contrattempo</td>
+<td>Incontro (usare la tabella regionale)</td>
+</tr>
+<tr>
+<td>2</td>
+<td>Fatica</td>
+<td>Riposare e consumare razioni (1/persona) o subire danni minori (1 HP)</td>
+</tr>
+<tr>
+<td>3</td>
+<td>Esaurimento</td>
+<td>Scadenza di una condizione transitoria (luce, incantesimo, etc)</td>
+</tr>
+<tr>
+<td>4</td>
+<td>Zona</td>
+<td>Cambiamento dello stato del dungeon (o altri cambiamenti in zona)</td>
+</tr>
+<tr>
+<td>5</td>
+<td>Percezione</td>
+<td>Suggerimento o indizio sul prossimo incontro</td>
+</tr>
+<tr>
+<td>6</td>
+<td>Vantaggio</td>
+<td>Turno libero</td>
+</tr>
+</tbody></table>
+<h3 id="turno-di-combattimento"><a class="header-link" href="#turno-di-combattimento"></a>Turno di combattimento</h3>
+<table>
+<thead>
+<tr>
+<th>d6</th>
+<th>Risultato</th>
+<th>Interpretazione</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>1</td>
+<td>Contrattempo</td>
+<td>Gli avversari agiscono per primi o avviene un incontro supplementare (usare la tabella di zona)</td>
+</tr>
+<tr>
+<td>2</td>
+<td>Fatica</td>
+<td>Si subiscono danni minori (1 HP) se impegnati in mischia</td>
+</tr>
+<tr>
+<td>3</td>
+<td>Esaurimento</td>
+<td>Scadenza di una condizione transitoria (luce, fuoco, etc)</td>
+</tr>
+<tr>
+<td>4</td>
+<td>Zona</td>
+<td>Cambiamento del campo di battaglia (o altri cambiamenti in zona)</td>
+</tr>
+<tr>
+<td>5</td>
+<td>Percezione</td>
+<td>Suggerimento o indizio sul prossimo incontro</td>
+</tr>
+<tr>
+<td>6</td>
+<td>Vantaggio</td>
+<td>Turno libero</td>
+</tr>
+</tbody></table>
+<ul class="list">
+<li><em>Alcuni disastri (1d6)</em>: 1 invasione, 2 insurrezione, 3 incendio, 4 terremoto, 5 inondazione, 6 stella cadente</li>
+<li><em>Alcune zone in dungeon (1d6)</em>: 1 ostruzione, 2-3 sigillare/aprire la porta, 4-5 deviare dell&#39;acqua, 6 svelare un segreto</li>
+<li><em>Usare il buon senso</em>: ignorare i risultati che non hanno senso nella fiction, ma solo per una volta.</li>
+<li><em>Mantenere il tempo astratto</em>: raramente vale la pena di quantificare con precisione i dettagli</li>
+</ul>
+<h2 id="mosse-e-condizioni"><a class="header-link" href="#mosse-e-condizioni"></a>Mosse e Condizioni</h2>
+<p>Le <em>Mosse</em> rappresentano azioni rilevanti per il contesto narrativo corrente, come ad esempio l&#39;esplorazione di un tratto di palude senza sentieri. Le <em>Condizioni</em> rappresentano la persistenza di uno stato transitorio, come l&#39;affaticamente dell&#39;avventuriero. Le Condizioni possono essere applicate ad aree, gruppi o individui. Il rigore di definizione delle Condizioni è una questione di stile. Dei gettoni possono essere d&#39;aiuto. Gli elenchi di Mosse e Condizioni riportati di seguito sono suggerimenti piuttosto che completi. Improvvisare altre Mosse in modo opportuno, in base alle decisioni dell&#39;arbitro.</p>
+<p>I <strong>turni nel rifugio</strong> rappresentano diversi giorni o settimane di riposo e recupero.</p>
+<ul class="list">
+<li><em>Mosse libere nel rifugio</em>: avanzare/aumentare di livello, preparare incantesimi, recuperare, reclutare, rifornire.</li>
+<li><em>Mosse complete nel rifugio</em>: creare equipaggiamento, scrivere pergamene, condurre ricerche.</li>
+<li><em>Condizioni di rifugio</em>: maledizione, carestia, pestilenza, penuria, assedio, inverno.</li>
+</ul>
+<p>I <strong>turni nelle terre selvagge</strong> rappresentano il viaggio e l&#39;accamparsi, durano approssimativamente un giorno e una notte. Per completare un turno nelle terre selvagge è necessario consumare una razione o prendere la condizione di esaurimento, oltre a tirare il dado di rischio. Chi è già esausto, all&#39;inizio di un turno nelle terre selvagge subisce un danno minore (1 HP). Determinare casualmente se i contrattempi avvengono di giorno o di notte.</p>
+<ul class="list">
+<li><em>Mosse libere nella natura selvaggia</em>: accesso a un punto di riferimento noto nell&#39;area corrente, effettuare un sopralluogo nelle aree adiacenti.</li>
+<li><em>Mosse complete nella natura selvaggia</em>: recarsi nell&#39;area adiacente, cercare, esplorare, cacciare, seguire le tracce</li>
+<li><em>Condizioni della natura selvaggia</em>: stanchezza, perdersi</li>
+</ul>
+<p><em>Perdersi</em>: Il viaggio non è più un&#39;opzione. Usare la ricerca per localizzare un punto di riferimento, rimuovendo la condizione &quot;perdersi&quot; in caso di successo.</p>
+<p>I <strong>turni nel dungeon</strong> rappresentano l&#39;esplorazione a scala architettonica, e dura approssimativamente decine di minuti o qualche ora, ipotizzando un&#39;esplorazione attenta in luoghi ostili.</p>
+<ul class="list">
+<li><em>Mosse libere nel dungeon</em>: guardare sotto un tappeto, aprire una porta non bloccata, tirare una leva.</li>
+<li><em>Mosse complete nel dungeon</em>: arrampicarsi, forzare una porta, spostarsi in un&#39;area adiacente, scassinare una serratura, cercare.</li>
+<li><em>Condizionamento nel dungeon</em>: lume di candela, torcia, sovraccarico</li>
+</ul>
+<p>I <strong>turni di combattimento</strong> rappresentano azioni tattiche che si svolgono nell&#39;arco di secondi o minuti.</p>
+<ul class="list">
+<li><em>Mosse libere di combattimento</em>: gridare un comando, lasciar cadere un oggetto,</li>
+<li><em>Mosse complete di combattimento</em>: sparare, incantesimo, colpire, lanciare, ritirarsi</li>
+<li><em>Condizioni di combattimento</em>: bruciare, difendere, afferrare, proni</li>
+</ul>
+<p><strong>Note e ulteriori letture</strong>  </p>
+<ul class="list">
+<li>Considerate l&#39;utilizzo di un semplice sistema di ingombro basato sugli slot, come ad esempio un oggetto per ogni punto di forza.</li>
+<li>I risultati delle zone funzionano meglio se si progettano aree con conti alla rovescia o aspetti che possono passare da uno stato all&#39;altro.</li>
+<li>I sostituisco l&#39;iniziativa tradizionale con il dado di rischio di combattimento.</li>
+</ul>
+</body>
+</html>
