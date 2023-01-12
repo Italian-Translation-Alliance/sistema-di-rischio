@@ -6,8 +6,9 @@ Rilasciato sotto licenza Creative Commons Attribution 3.0 Unported license.
 
 Traduzione di Roberto Bisceglie
 
-[PDF](SistemaDiRischio.pdf)  
-[ODT](SistemaDiRischio.odt)
+Scarica le versioni "portabili":
+- [PDF](SistemaDiRischio.pdf)  
+- [ODT](SistemaDiRischio.odt)
 
 Il dado di rischio a sei facce distribuisce le minacce, gestisce le risorse come la luce e tiene traccia il tempo. È il motore che fa avanzare il gioco, assicurando che le scelte abbiano  conseguenze, riducendo al minimo le operazioni di bookkeeping. Perché un turno sia svolto, un giocatore deve tirare il dado di rischio e l'arbitro deve interpretare i risultati in base al tipo di turno in corso. Durante un turno, ogni giocatore può compiere un'azione completa. La forma generale del dado di rischio è:
 
